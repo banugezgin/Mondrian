@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    #flex {
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
+    #container {
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px; 
+      gap: 9px;
+      background-color: black;
+    }
+
+    .White {
+      background-color: #F0F1EC;
+    }
+    .Red {
+      background-color: #E72F24;
+    }
+
+    .Black {
+      background-color: #232629;
+    }
+
+    .Blue {
+      background-color: #004592;
+    }
+
+    .Yellow {
+      background-color: #F9D01E;
+    }
+
+    #two {
+      grid-area: 1 / 2 / 2 / 5;
+      }
+
+    #three {
+      grid-area: 2 / 1 / 4 / 2;
+      }
+
+    #four {
+      grid-area: 2 / 2 / 4 / 4;
+    }
+
+    #five {
+      grid-area: 2 / 4 / 3 / 5;
+      border-bottom: 10px solid black;
+    }
+
+    #six {
+      grid-area: 3/4/5/5;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="flex">
+  <div id="container">
+    <div id="one" class="Red"></div>
+    <div id="two" class="White"></div>
+    <div id="three" class="White"></div>
+    <div id="four" class="White"></div>
+    <div id="five" class="Blue"></div>
+    <div id="six" class="White"></div>
+    <div id="seven" class="White"></div>
+    <div id="eight" class="Yellow"></div>
+    <div id="nine" class="Black"></div>
+  </div>  
+  </div>
+</body>
+
+</html>
